@@ -1,0 +1,39 @@
+{
+  "name": "whenworks-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "start:socket": "node server/socketServer.js",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx || true",
+    "test": "playwright test"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
+    "axios": "^1.11.0",
+    "bootstrap": "^5.3.8",
+    "cloudflared": "^0.7.1",
+    "express-rate-limit": "^7.0.0",
+    "googleapis": "^131.0.0",
+    "luxon": "^3.5.0",
+    "mysql2": "^3.3.0",
+    "next": "14.0.0",
+    "next-auth": "^4.20.1",
+    "node-cron": "^3.0.2",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "redux": "^4.2.1",
+    "socket.io": "^4.7.0",
+    "socket.io-client": "^4.7.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.5.2",
+    "eslint": "^8.44.0"
+  }
+}
